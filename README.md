@@ -39,16 +39,21 @@ Context: CREATE TABLE head (age INTEGER)
 ```text
 .
 ├── README.md
-├── setup.ipynb
-├── notebook/
+├── datasets        # 전처리가 완료된 데이터셋
+│   ├── ko_test_dataset.json
+│   └── ko_train_dataset.json
+├── images          # 가이드용 이미지 셋
+│
+├── notebook        # 실행용 파이썬 노트북
+│   ├── 0_setup.ipynb
 │   ├── 1_data_preprocessing.ipynb
 │   ├── 2_fine_tuning.ipynb
 │   ├── 3_deploy.ipynb
 │   └── 4_evaluation.ipynb
-├── datasets/           # 한국어 번역 및 전처리가 완료된 데이터셋
-│   ├── ko_test_dataset.json
-│   └── ko_train_dataset.json
-└── scripts/            # 파인 튜닝에 필요한 스크립트
+└── scripts         # 파인 튜닝에 필요한 스크립트
+    ├── requirements.txt
+    └── run_fsdp_qlora_llama3.py
+
 ```
 
 프로젝트의 주요 구성 요소는 다음과 같습니다:
