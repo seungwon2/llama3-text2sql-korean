@@ -37,16 +37,18 @@ Context: CREATE TABLE head (age INTEGER)
 ## 🗂️ 디렉토리 구조
 
 ```text
+
 .
 ├── README.md
-├── datasets        # 전처리가 완료된 데이터셋
+├── datasets        # 전처리가 완료된 full 데이터셋
 │   ├── ko_test_dataset.json
 │   └── ko_train_dataset.json
-├── images          # 가이드용 이미지 셋
+├── images          # 실습 가이드용 이미지 셋
 │
-├── notebook        # 실행용 파이썬 노트북
+├── notebook        # 실습 수행용 파이썬 노트북
 │   ├── 0_setup.ipynb
-│   ├── 1_data_preprocessing.ipynb
+│   ├── 1-1_full_data_preprocessing.ipynb # 실습용 간식 데이터 셋
+│   ├── 1_data_preprocessing.ipynb        # 프로덕션 용 full 데이터 셋
 │   ├── 2_fine_tuning.ipynb
 │   ├── 3_deploy.ipynb
 │   └── 4_evaluation.ipynb
@@ -58,8 +60,8 @@ Context: CREATE TABLE head (age INTEGER)
 
 프로젝트의 주요 구성 요소는 다음과 같습니다:
 
-- [0_setup.ipynb](notebook/0_setup.ipynb): 초기 환경 설정을 위한 노트북
-- [1_data_preprocessing.ipynb](notebook/1_data_preprocessing.ipynb): 데이터 전처리 과정
+- [0_setup.ipynb](notebook/0_setup.ipynb): 초기 환경 설정 과정
+- [1_data_preprocessing.ipynb](notebook/1_data_preprocessing.ipynb): 데이터 전처리 과정 (간식 데이터 이용, 프로덕션 용 full 데이터 셋은 [1-1_full_data_preprocessing.ipynb](notebook/1-1_full_data_preprocessing.ipynb) 노트북 이용)
 - [2_fine_tuning.ipynb](notebook/2_fine_tuning.ipynb): 모델 파인 튜닝 과정
 - [3_deploy.ipynb](notebook/3_deploy.ipynb): Amazon Bedrock에 모델 배포 과정
 - [4_evaluation.ipynb](notebook/4_evaluation.ipynb): 모델 평가 과정

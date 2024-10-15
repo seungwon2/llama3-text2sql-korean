@@ -94,7 +94,7 @@ def training_function(script_args, training_args):
     )
     validation_dataset = load_dataset(
         "json",
-        data_files=os.path.join(script_args.validation_dataset_path, "ko_test_dataset.json"),
+        data_files=os.path.join(script_args.validation_dataset_path, "ko_validation_dataset.json"),
         split="train",
     )        
 
