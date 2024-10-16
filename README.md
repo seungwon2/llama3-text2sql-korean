@@ -47,8 +47,8 @@ Context: CREATE TABLE head (age INTEGER)
 │
 ├── notebook        # 실습 수행용 파이썬 노트북
 │   ├── 0_setup.ipynb
-│   ├── 1-1_full_data_preprocessing.ipynb # 실습용 small sample 데이터 셋
-│   ├── 1_data_preprocessing.ipynb        # 프로덕션 용 full 데이터 셋
+│   ├── 1-1_full_data_preprocessing.ipynb # 프로덕션 용 full 데이터 셋
+│   ├── 1_data_preprocessing.ipynb        # 실습용 small sample 데이터 셋
 │   ├── 2_fine_tuning.ipynb
 │   ├── 3_deploy.ipynb
 │   └── 4_evaluation.ipynb
